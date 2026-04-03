@@ -145,28 +145,25 @@ const EXPERIENCE = [
 
 const PROJECTS = [
   {
-    title: "Sales Data Analysis Dashboard",
+    title: "Sales Analysis Dashboard",
     description:
-      "An upcoming project analyzing sales trends and KPIs using Python and SQL to uncover actionable business insights.",
+      "Analyzed sales data to identify trends, key performance indicators (KPIs), and actionable business insights using data analysis techniques.",
     tech: ["Python", "SQL", "Excel"],
-    github: "https://github.com/manishkumar0105",
-    upcoming: true,
+    github: "https://github.com/manishkumar0105/Sales-Analysis-Dashboard",
   },
   {
     title: "Customer Segmentation Analysis",
     description:
-      "Machine learning-based customer segmentation project using clustering algorithms to group customers by behavior.",
+      "Implemented machine learning clustering techniques to segment customers based on behavior and improve targeted decision-making.",
     tech: ["Python", "scikit-learn", "Pandas"],
-    github: "https://github.com/manishkumar0105",
-    upcoming: true,
+    github: "https://github.com/manishkumar0105/Customer-Segmentation-Analysis",
   },
   {
-    title: "Data Visualization Portfolio",
+    title: "Netflix OTT Analysis",
     description:
-      "A curated collection of data visualizations built with Excel and Power BI showcasing analytical storytelling.",
-    tech: ["Excel", "Power BI", "Tableau"],
-    github: "https://github.com/manishkumar0105",
-    upcoming: true,
+      "Explored and analyzed Netflix content data to uncover trends in genres, releases, and audience preferences using data analysis.",
+    tech: ["Python", "Pandas", "Data Visualization"],
+    github: "https://github.com/manishkumar0105/Netflix-OTT-Analysis",
   },
 ];
 
@@ -545,14 +542,6 @@ function Projects() {
                 }}
               >
                 <div className="flex-1">
-                  {proj.upcoming && (
-                    <Badge
-                      variant="outline"
-                      className="text-xs text-muted-foreground border-border mb-3"
-                    >
-                      Coming Soon
-                    </Badge>
-                  )}
                   <h4 className="font-bold text-foreground mb-2">
                     {proj.title}
                   </h4>
